@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>My First ToDoList</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="myStyle.css">
+    </head>
+    <body onload="checkCookie()">
+        <div class="wrap">
+            <div class="header"><span>Todo List</span></div>
+            <p>
+              <input type="text" id="TaskName" value="Enter new Task" onclick="this.value='';" >     
+                <button id="newItem">
+                    Add 
+                </button>          
+            </p>
+
+            <ul id="todoList">
+            </ul>            
+        </div>        
+
+
+        <script src="todo.js">
+        </script>
+    </body>
+</html>
